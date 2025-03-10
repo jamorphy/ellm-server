@@ -1,0 +1,47 @@
+providers:
+  openai:
+    models:
+      gpt-4o:
+        api_key: "${OPENAI_API_KEY}"
+        system_prompt: "You are a helpful assistant."
+        temperature: 0.7
+      gpt-4o-mini:
+        api_key: "${OPENAI_API_KEY}"
+        system_prompt: "You are a helpful assistant."
+        temperature: 0.7
+  openrouter:
+    models:
+      deepseek/deepseek-r1:
+        api_key: "${OPENROUTER_API_KEY}"
+        system_prompt: "You are a helpful assistant."
+        temperature: 0.7
+        include_reasoning: true
+      anthropic/claude-3.7-sonnet:
+        api_key: "${OPENROUTER_API_KEY}"
+        system_prompt: "You are a helpful assistant."
+        temperature: 0.7n
+      anthropic/claude-3.7-sonnet:thinking:
+        api_key: "${OPENROUTER_API_KEY}"
+        system_prompt: "You are a helpful assistant."
+        temperature: 0.7
+      openai/o3-mini-high:
+        api_key: "${OPENROUTER_API_KEY}"
+        system_prompt: "You are a helpful assistant."
+        temperature: 0.7
+      openai/o1:
+        api_key: "${OPENROUTER_API_KEY}"
+        system_prompt: "You are a helpful assistant."
+        temperature: 0.7
+  anthropic:
+    models:
+      claude-3-5-sonnet-20241022:
+        api_key: "${ANTHROPIC_API_KEY}"
+        system_prompt: "You are a helpful assistant."
+        temperature: 0.7
+        max_tokens: 4096
+      models:
+      claude-3-7-sonnet-latest:
+        api_key: "${ANTHROPIC_API_KEY}"
+        system_prompt: "You are a helpful assistant."
+        temperature: 0.7
+        max_tokens: 4096
