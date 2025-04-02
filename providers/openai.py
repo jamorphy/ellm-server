@@ -1,4 +1,4 @@
-from openai import OpenAI
+import openai
 from base_provider import BaseProvider
 
 class OpenAIProvider(BaseProvider):
@@ -15,7 +15,7 @@ class OpenAIProvider(BaseProvider):
         return messages
 
     def generate_stream(self, params: dict, messages: list):
-        client = OpenAI(api_key=params["api_key"])
+        client = openai.OpenAI(api_key=params["api_key"])
         stream = client.chat.completions.create(
             model=params.get("model", "gpt-4o"),
             messages=messages,
