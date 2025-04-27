@@ -16,6 +16,14 @@ providers:
         system_prompt: "You are a helpful assistant."
         temperature: 0.7
         include_reasoning: true
+      openai/gpt-4o:
+        api_key: "${OPENROUTER_API_KEY}"
+        system_prompt: "You are a helpful assistant."
+        temperature: 0.7
+      openai/gpt-4.1:
+        api_key: "${OPENROUTER_API_KEY}"
+        system_prompt: "You are a helpful assistant."
+        temperature: 0.7
       google/gemini-2.0-flash-001:
         api_key: "${OPENROUTER_API_KEY}"
         system_prompt: "You are a helpful assistant."
@@ -24,10 +32,9 @@ providers:
         api_key: "${OPENROUTER_API_KEY}"
         system_prompt: "You are a helpful assistant."
         temperature: 1.0
-      google/gemini-2.5-pro-exp-03-25:free:
+      google/gemini-2.5-pro-preview-03-25:
         api_key: "${OPENROUTER_API_KEY}"
         system_prompt: "You are a helpful assistant."
-        temperature: 1.0
       anthropic/claude-3.7-sonnet:
         api_key: "${OPENROUTER_API_KEY}"
         system_prompt: "You are a helpful assistant."
